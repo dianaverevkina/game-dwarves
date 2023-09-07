@@ -1,0 +1,42 @@
+body {
+  height: 100%;
+}
+.game__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.board {
+  /* width: 200px;
+  height: 200px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.cell {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  background: rgb(234, 187, 195, 47%);
+}
+
+.dwarf{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dwarf__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
